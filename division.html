@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function division (){
+         let a = Number(document.getElementById("Num1").value);
+         let b = Number(document.getElementById("Num2").value);
+         if(b==0){
+            document.write("cannot divisible by zero")
+         }
+         else{
+         let division=a/b;
+         document.write(division);
+         }
+        }
+    </script>
+
+    <label>Enter no 1:</label>
+    <input type="number" id="Num1">
+
+    <br><br>
+
+    <label>Enter no 2:</label>
+    <input type="number" id="Num2">
+
+    <br><br>
+
+    <button onclick="division()">division</button>
+</body>
+</html>

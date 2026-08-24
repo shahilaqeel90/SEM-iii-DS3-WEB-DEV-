@@ -6,9 +6,9 @@ body{
 #BOX{
     
     display: flex;
-    /* justify-content: center; */
-    margin: 10px;
-    padding: 10px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 #box1{

@@ -8,11 +8,11 @@ body{
 #form{
     width: 300px;
     margin: 100px auto 0 auto;
-    border:2px solid red;
+    border:2px solid rgb(69, 2, 2);
     border-radius: 15px;
     padding: 25px;
     background-color: yellowgreen;
-    color: blue;
+    color: rgb(82, 5, 32);
     box-shadow: -3px 3px 10px #000;
 
 }
