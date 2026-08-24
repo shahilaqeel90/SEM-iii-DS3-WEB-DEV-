@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window event</title>
+    <script>
+        let a;
+         function openwindow(){
+        a=window.open("",
+        "_blank",
+        "height=500px,width=500px,left=600px,top=80px"
+    ); 
+        }
+        function closewindow(){
+            a.close();
+        }
+        function movewindow(){
+            a.moveTo(200,600);
+                a.focus();
+            }
+        
+    </script>
+</head>
+<body>
+    <button onclick="openwindow()">CLICK ME FOR OPEN</button>
+    <button onclick="closewindow()">CLICK ME FOR CLOSE</button>
+    <button onclick="movewindow()">MOVE NEW WINDOW</button>
+</body>
+</html>
+
+
