@@ -25,10 +25,10 @@ console.log('Example file is appended successfully');
 fs.unlinkSync('example1.txt');
 
 console.log('example1 file is deleted successfully');
-fs.mkdirSync('new-directory');
-console.log('new directory created successfully');
-fs.rmdirSync('new-directory');
-console.log('new directory deleted successfully');
+// fs.mkdirSync('new-directory');
+// console.log('new directory created successfully');
+// fs.rmdirSync('new-directory');
+// console.log('new directory deleted successfully');
 if(fs.existsSync('example.txt')){
     console.log('file exists');
 }else{

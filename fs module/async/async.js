@@ -1,36 +1,49 @@
-const fs = require('fs');
+const fs=require('fs');
+// fs.writeFile(
+//     'sample.txt','welcome to full stack development',(err)=>{
+//         if(err){
+//             console.log('error creating file',(err));
+//         }else{
 
-fs.writeFileSync(
-    'example.txt',
-    'This is Experiment 2 in FSD Workshop',
-    'utf8'
-);
+        
+//         console.log('file created successfully');
+//     }
+//  }
+// )
+// fs.readFile('sample.txt','utf8',(err,data)=>{
+//     if(err){
+//         console.log('error  reading file:',err);
+//         return;
+//     }
+//     else{
+//         console.log('file content:');
+//         console.log(data);
+//     }
 
-fs.writeFileSync(
-    'example1.txt',
-    'This is Experiment 2 in FSD Workshop',
-    'utf8'
-);
+// })
+// // append
+// fs.appendFile('sample.txt','\nsemester:3',(err)=>{
+//     if(err){
+//         console.log('error updating file',err);
+//     }else{
+//         console.log('\n3.file updated successfully');
+//     }
+// })
+fs.writeFile(
+    'sample.txt1','welcome to full stack development',(err)=>{
+        if(err){
+            console.log('error creating file',(err));
+        }else{
 
-console.log('create file run successfully');
-
-const data = fs.readFileSync('example.txt', 'utf8');
-
-console.log('file content is:', data);
-
-fs.appendFileSync('example.txt', '\nThis is the new line');
-
-console.log('Example file is appended successfully');
-
-fs.unlinkSync('example1.txt');
-
-console.log('example1 file is deleted successfully');
-fs.mkdirSync('new-directory');
-console.log('new directory created successfully');
-fs.rmdirSync('new-directory');
-console.log('new directory deleted successfully');
-if(fs.existsSync('example.txt')){
-    console.log('file exists');
-}else{
-    console.log('file doesnot exists');
-}
+        
+        console.log('file created successfully');
+    }
+ }
+)
+fs.unlink('example.txt',(err)=>{
+    if(err){
+        console.error('Error deleting file : ',err);
+    }else{
+        console.log('\n4. file deleted successsfully !');
+    }
+})
