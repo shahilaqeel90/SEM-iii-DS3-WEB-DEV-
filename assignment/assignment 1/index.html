@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="studentPage">
+
+        <h1>Student Quiz</h1>
+
+        <fieldset>
+
+            <legend>Student Information</legend>
+
+            <br>
+
+            <label>Student Name:</label>
+
+            <input type="text"
+                   id="studentName"
+                   placeholder="Enter your name">
+
+            <br><br>
+
+            <label>Student Roll Number:</label>
+
+            <input type="text"
+                   id="rollNumber"
+                   placeholder="Enter roll number">
+
+            <br><br>
+
+            <label>Student Section:</label>
+
+            <br><br>
+
+            <input type="radio"
+                   name="section"
+                   value="CSE DS1">
+
+            <label>CSE DS1</label>
+
+            <br>
+
+            <input type="radio"
+                   name="section"
+                   value="CSE DS2">
+
+            <label>CSE DS2</label>
+
+            <br>
+
+            <input type="radio"
+                   name="section"
+                   value="CSE DS3">
+
+            <label>CSE DS3</label>
+
+            <br><br>
+
+            <button type="button"
+                    onclick="startQuiz()">
+
+                Start Quiz
+
+            </button>
+
+        </fieldset>
+
+    </div>
+
+    <div id="timer">
+
+        Time Left:
+        <span id="time">1:00</span>
+
+    </div>
+
+
+    <div id="question1" class="question">
+
+        <h1>Question 1</h1>
+
+        <p>What is the output of 10 - 5?</p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q1"
+                   value="5">
+            5
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q1"
+                   value="3">
+            3
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q1"
+                   value="7">
+            7
+        </label>
+
+        <button type="button"
+                onclick="nextQuestion(1)">
+
+            Next
+
+        </button>
+
+    </div>
+
+    <div id="question2" class="question">
+
+        <h1>Question 2</h1>
+
+        <p>What is the output of 2 * 2?</p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q2"
+                   value="3">
+            3
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q2"
+                   value="4">
+            4
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q2"
+                   value="6">
+            6
+        </label>
+
+        <button type="button"
+                onclick="nextQuestion(2)">
+
+            Next
+
+        </button>
+
+    </div>
+
+    <div id="question3" class="question">
+
+        <h1>Question 3</h1>
+
+        <p>What happens if we divide 10 by 5?</p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q3"
+                   value="4">
+            4
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q3"
+                   value="2">
+            2
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q3"
+                   value="5">
+            5
+        </label>
+
+        <button type="button"
+                onclick="nextQuestion(3)">
+
+            Next
+
+        </button>
+
+    </div>
+
+    <div id="question4" class="question">
+
+        <h1>Question 4</h1>
+
+        <p>What is the capital of India?</p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q4"
+                   value="Kolkata">
+            Kolkata
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q4"
+                   value="Delhi">
+            Delhi
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q4"
+                   value="Mumbai">
+            Mumbai
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q4"
+                   value="Chennai">
+            Chennai
+        </label>
+
+        <button type="button"
+                onclick="nextQuestion(4)">
+
+            Next
+
+        </button>
+
+    </div>
+
+    <div id="question5" class="question">
+
+        <h1>Question 5</h1>
+
+        <p>
+            Which language is used to create
+            the structure of a webpage?
+        </p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q5"
+                   value="CSS">
+            CSS
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q5"
+                   value="HTML">
+            HTML
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q5"
+                   value="Java">
+            Java
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q5"
+                   value="Python">
+            Python
+        </label>
+
+        <button type="button"
+                onclick="nextQuestion(5)">
+
+            Next
+
+        </button>
+
+    </div>
+
+    <div id="question6" class="question">
+
+        <h1>Question 6</h1>
+
+        <p>
+            Which language is used for
+            styling a webpage?
+        </p>
+
+        <label class="option">
+            <input type="radio"
+                   name="q6"
+                   value="HTML">
+            HTML
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q6"
+                   value="CSS">
+            CSS
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q6"
+                   value="C++">
+            C++
+        </label>
+
+        <label class="option">
+            <input type="radio"
+                   name="q6"
+                   value="Python">
+            Python
+        </label>
+
+        <button type="button"
+                onclick="submitQuiz()">
+
+            Submit Quiz
+
+        </button>
+
+    </div>
+
+
+    <div id="resultPage">
+
+        <h1>Quiz Result</h1>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
+
